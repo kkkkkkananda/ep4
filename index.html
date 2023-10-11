@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rell="stylesheet" href="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionario</title>
 </head>
-<body onload="função_um()">
-    <button type="button" onclic="função_dois()">funçao</button>
-    <script src="scrips"></script>
+
+<body>
+    <header>OI</header>
+    <main>
     <form>
-        <input type="radio" name="oi" id="correta"> um <br>
-        <input type="radio" name="oi" id="correta"> dois <br>
-        <input type="radio" name="oi" id="incorreta"> tres <br>
-        <button type="button">resposta</button>
-        </form>
+        <h3>Aqui é uma questão?</h3>
+        <input type="radio" name="resposta" value="correto">Qualquer coisa <br>
+        <input type="radio" name="resposta" value="incorreta">Qualquer coisa <br>
+        <input type="radio" name="resposta" value="incorreta">Qualquer coisa <br>
+        <p id="resultado_1"></p>
+
+        <h3>Aqui é uma questão?</h3>
+        <input type="radio" name="resposta2" value="correto">Qualquer coisa <br>
+        <input type="radio" name="resposta2" value="incorreta">Qualquer coisa <br>
+        <input type="radio" name="resposta2" value="incorreta">Qualquer coisa <br>
+        <p id="resultado_2"></p>
+
+        <h3>Aqui é uma questão?</h3>
+        <input type="radio" name="resposta3" value="correto">Qualquer coisa <br>
+        <input type="radio" name="resposta3" value="incorreta">Qualquer coisa <br>
+        <input type="radio" name="resposta3" value="incorreta">Qualquer coisa <br>
+        <p id="resultado_3"></p>
+
+        <h3>Aqui é uma questão?</h3>
+        <input type="radio" name="resposta4" value="correto">Qualquer coisa <br>
+        <input type="radio" name="resposta4" value="incorreta">Qualquer coisa <br>
+        <input type="radio" name="resposta4" value="incorreta">Qualquer coisa <br>
+        <p id="resultado_4"></p><br>
+        <button type="button" onclick="botaozinho_resposta()">Verificar</button>
+
+    </form>
+    </main>
+    <script src="scrips.js"></script>
+    <footer></footer>
 </body>
 </html>
