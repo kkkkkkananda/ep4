@@ -9,37 +9,53 @@
 </head>
 
 <body>
-    <header>OI</header>
+    <header><div class="logo">
+       <!- logo do site  -> 
+            <img src="logo.png" alt="Logo do Site de Questões">
+        </div>
+            <div class="header-title">Era Vargas</div>
+            <div class="group">
+                <input placeholder="Busque um tema" type="search" class="input">
+              </div>
+        </div>
+    </header>
     <main>
-    <form>
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta" value="correto">Qualquer coisa <br>
-        <input type="radio" name="resposta" value="incorreta">Qualquer coisa <br>
-        <input type="radio" name="resposta" value="incorreta">Qualquer coisa <br>
-        <p id="resultado_1"></p>
+     <form>
+        <h1>Questões sobre </h1>
+        <div class="question"></div>
+        <h3>Questão 1</h3>
+        <input type="radio" name="quest_1" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
 
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta2" value="correto">Qualquer coisa <br>
-        <input type="radio" name="resposta2" value="incorreta">Qualquer coisa <br>
-        <input type="radio" name="resposta2" value="incorreta">Qualquer coisa <br>
-        <p id="resultado_2"></p>
+        <h3>Questão 2</h3>
+        <input type="radio" name="quest_2" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
 
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta3" value="correto">Qualquer coisa <br>
-        <input type="radio" name="resposta3" value="incorreta">Qualquer coisa <br>
-        <input type="radio" name="resposta3" value="incorreta">Qualquer coisa <br>
-        <p id="resultado_3"></p>
+        <h3>Questão 3</h3>
+        <input type="radio" name="quest_3" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
 
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta4" value="correto">Qualquer coisa <br>
-        <input type="radio" name="resposta4" value="incorreta">Qualquer coisa <br>
-        <input type="radio" name="resposta4" value="incorreta">Qualquer coisa <br>
-        <p id="resultado_4"></p><br>
-        <button type="button" onclick="botaozinho_resposta()">Verificar</button>
+        <h3>Questão 4</h3>
+        <input type="radio" name="quest_4" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
 
+        <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
     </form>
     </main>
     <script src="scrips.js"></script>
-    <footer></footer>
+    <footer>2023</footer>
 </body>
 </html>

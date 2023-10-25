@@ -1,37 +1,61 @@
-function botaozinho_resposta() {
-    var respostaUsuario1 = document.querySelector('input[name="resposta"]:checked');
-    var respostaUsuario2 = document.querySelector('input[name="resposta2"]:checked');
-    var respostaUsuario3 = document.querySelector('input[name="resposta3"]:checked');
-    var respostaUsuario4 = document.querySelector('input[name="resposta4"]:checked');
-
-
-    if(respostaUsuario1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4){
-        if(respostaUsuario1.value === "correto"){
-            document.getElementById("resultado_1").innerHTML = "acertou";
-        }
-        else{
-            document.getElementById("resultado_1").innerHTML = "ERROU!!!";
-        }
-        if(respostaUsuario2.value === "correto"){
-            document.getElementById("resultado_2").innerHTML = "acertou";
-        }
-        else{
-            document.getElementById("resultado_2").innerHTML = "ERROU!!!";
-        }
-        if(respostaUsuario3.value === "correto"){
-            document.getElementById("resultado_3").innerHTML = "acertou";
-        }
-        else{
-            document.getElementById("resultado_3").innerHTML = "ERROU!!!";
-        }
-        if(respostaUsuario4.value === "correto"){
-            document.getElementById("resultado_4").innerHTML = "acertou";
-        }
-        else{
-            document.getElementById("resultado_4").innerHTML = "ERROU!!!";
-        }
+function inclui_nome() {
+    var nome_variavel = prompt("Coloque seu nome:");
+    if(nome_variavel){
+        document.getElementById("marcacao_nome").innerHTML = nome_variavel;
     }
     else{
-        alert("Não deixar questões em aberto!");
+        alert("Nome não atribuido, preencha o nome.");
+        inclui_nome();
     }
+}
+
+function funcao_resposta(){
+
+    var resp1 = document.querySelector('input[name="quest_1"]:checked');
+    var resp2 = document.querySelector('input[name="quest_2"]:checked');
+    var resp3 = document.querySelector('input[name="quest_3"]:checked');
+    var resp4 = document.querySelector('input[name="quest_4"]:checked');
+
+    var contador = 0;
+
+
+    if(resp1 && resp2 && resp3 && resp4){
+        if(resp1.value == "correta"){
+            document.getElementById("resp_correta_1").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_1").innerHTML = "Errada!"
+
+        }
+        if(resp2.value == "correta"){
+            document.getElementById("resp_correta_2").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_2").innerHTML = "Errada!"
+
+        }
+        if(resp3.value == "correta"){
+            document.getElementById("resp_correta_3").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_3").innerHTML = "Erradas!"
+
+        }
+        if(resp4.value == "correta"){
+            document.getElementById("resp_correta_4").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_4").innerHTML = "Errada!"
+
+        }
+        document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
+    }
+    else{
+        alert("não deixe questões em branco!")
+    }
+
 }
