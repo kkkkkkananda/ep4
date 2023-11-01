@@ -25,7 +25,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_1").innerHTML = "Errada!"
+            document.getElementById("resp_errada_1").innerHTML = "Errada! Alternativa correta: a) medidas de caráter populista, atraindo as massas trabalhadoras. A classe trabalhadora urbana foi a principal cooptada para o projeto varguistas, pois os direitos trabalhistas não contemplavam o camponês. Somado a isso, a propaganda eficiente que mostrava Getúlio Vargas como um pai, que cuidava do seu povo e que sabia o que ele necessitava."
 
         }
         if(resp2.value == "correta"){
@@ -33,7 +33,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_2").innerHTML = "Errada!"
+            document.getElementById("resp_errada_2").innerHTML = "Errada! Alternativa correta a) Estado Novo; Alternativa correta a) Estado Novo; O Estado Novo foi estabelecido em 10 de novembro de 1937 quando Getúlio Vargas denunciou uma suposta tentativa de golpe por parte dos comunistas, o chamado Plano Cohen."
 
         }
         if(resp3.value == "correta"){
@@ -41,7 +41,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_3").innerHTML = "Erradas!"
+            document.getElementById("resp_errada_3").innerHTML = "Erradas! Alternativa correta: d) pela vinculação de direitos trabalhistas à tutela do Estado. Os sindicatos foram essenciais para a construção do direito dos trabalhadores na Era Vargas, pois estes passaram a ser um instrumento do governo para fazer a legislação trabalhista. As alternativas A e B estão erradas porque não existe democracia neste período. Também a C e a E não estão corretas porque o texto não faz menção ao que foi escrito nessas opções."
 
         }
         if(resp4.value == "correta"){

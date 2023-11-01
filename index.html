@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+     <!--Nos permite usar caracteres especiais-->
     <meta charset="UTF-8">
+    <!--é usado para que o site web se enquadre proporcionalmente nas telas de celulares-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <!--Titulo-->
+    <title>Era Vargas</title>
+    <!--Identifica o CSS para que possamos usá-lo no nosso HTML-->
     <link rel="stylesheet" href="style.css">
-    <title>Questionario</title>
 </head>
 
 <body>
     <header><div class="logo">
-       <!- logo do site  -> 
+       
             <img src="logo.png" alt="Logo do Site de Questões">
         </div>
             <div class="header-title">Era Vargas</div>
@@ -21,27 +24,29 @@
     </header>
     <main>
      <form>
-        <h1>Questões sobre </h1>
+        <h1>Questões sobre a Era Vargas</h1>
         <div class="question"></div>
-        <h3>Questão 1</h3>
-        <input type="radio" name="quest_1" value="correta">Resposta 1 <br>
-        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <h3>1-Na casa do beato Pedro Batista em Santa Brígida, na Bahia, D. Pedro II divide um espaço na parede com Getúlio Vargas. Este exemplo caracteriza um tipo de idealização da figura de mitos que ficaram sedimentados na memória popular. Podemos afirmar que Getúlio Vargas potencializou uma imagem de "pai dos pobres", em grande parte devido às(aos):</h3>
+        <input type="radio" name="quest_1" value="correta">a) medidas de caráter populista, atraindo as massas trabalhadoras. <br>
+        <input type="radio" name="quest_1" value="errada">b) medidas revolucionárias introduzidas com a reforma agrária.<br>
+        <input type="radio" name="quest_1" value="errada">c) restrições econômicas impostas aos industriais brasileiros.<br>
+        <input type="radio" name="quest_1" value="errada">d) restrições rígidas impostas à burguesia nacional e internacional.<br>
         <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
 
-        <h3>Questão 2</h3>
-        <input type="radio" name="quest_2" value="correta">Resposta 1 <br>
-        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
-        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
+        <h3>2-Em 10 de novembro de 1937, Getúlio Vargas se dirigiu à população através do rádio: "A disputa presidencial estava levando o país à desordem. Os comunistas infiltravam-se dia a dia nas instituições nacionais. A Nação corria perigo de uma luta de classes e os partidos políticos inquietavam o nosso povo".
 
-        <h3>Questão 3</h3>
-        <input type="radio" name="quest_3" value="correta">Resposta 1 <br>
-        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
-        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+            Este discurso inaugura o período chamado:</h3>
+        <input type="radio" name="quest_2" value="correta">a) Estado Novo <br>
+        <input type="radio" name="quest_2" value="errada">b) República Nova <br>
+        <input type="radio" name="quest_2" value="errada">c) Era Vargas <br>
+        <input type="radio" name="quest_2" value="errada">d) Revolução de 30<br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br>
+
+        <h3>Nos primeiros anos do governo Vargas, as organizações operárias sob controle das correntes de esquerda tentaram se opor ao seu enquadramento pelo Estado. Mas a tentativa fracassou. Além do governo, a própria base dessas organizações pressionou pela legalização. Vários benefícios, como as férias e a possibilidade de postular direitos perante às Juntas de Conciliação e Julgamento, dependiam da condição de ser membro de sindicato reconhecido pelo governo. No contexto histórico retratado pelo texto, a relação entre governo e movimento sindical foi caracterizada</h3>
+        <input type="radio" name="quest_3" value="correta">a) pelo reconhecimento de diferentes ideologias políticas. <br>
+        <input type="radio" name="quest_3" value="errada">b) por um diálogo democraticamente constituído. <br>
+        <input type="radio" name="quest_3" value="errada">c) pelas benesses sociais do getulismo. <br>
+        <input type="radio" name="quest_3" value="errada">d) pela vinculação de direitos trabalhistas à tutela do Estado <br>
         <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
 
         <h3>Questão 4</h3>
@@ -49,7 +54,7 @@
         <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
         <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
         <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
-        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p><br>
 
         <p id="quantos_acertos"></p>
             <button type="button" onclick="funcao_resposta()">Responder</button>

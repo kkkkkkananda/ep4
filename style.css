@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+/*Aqui começa a parte do (Grid) das paginas*/
+
+/*Colocamos o grid na loja principal */
 body{
     background-color:#be84bd;
     grid-gap: 5px;
@@ -13,7 +16,7 @@ body{
     grid-template-columns:50% auto;
     grid-template-rows: auto 1000px auto;
 }
-
+/*Aqui começa o Header*/
 header{
     grid-area: cab;
     width: 100%;
@@ -37,8 +40,8 @@ header h1 {
 main{
     grid-area: pri;
 }
-/* Estilização das perguntas */
 
+/* Aqui começa o footer */
 footer{
     grid-area: rod;
     background-color:#864786;
