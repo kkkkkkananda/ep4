@@ -6,25 +6,41 @@
 
 /*Colocamos o grid na loja principal */
 body{
-    background-color:#be84bd;
+    background-color:#e0bee0;
     grid-gap: 5px;
     display: grid;
     grid-template-areas: 
         "cab cab"
         "pri pri"
         "rod rod";
-    grid-template-columns:50% auto;
+    grid-template-columns:40% auto;
     grid-template-rows: auto 1000px auto;
 }
 /*Aqui começa o Header*/
 header{
     grid-area: cab;
     width: 100%;
-    background-color: #864786;
+    background-color: #a55ea5;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(119, 89, 128);
+    color: rgb(253, 253, 253);
+    font-size: 50px;
+    padding: 15px;
+}
+.header-title:hover{
+    color: rgb(255, 255, 255);;
+    text-shadow: rgb(64, 50, 68); 
+    border-color: rgb(255, 255, 255);
+    border-width: 0 0 4px 0;
+    font-size: 52px;
+    transition: 1s;
 }
 .group {
     display: flex;
@@ -32,6 +48,35 @@ header{
     align-items: center;
     position: relative;
     max-width: 190px;
+}
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+.input::placeholder {
+    color: #9e9ea7;
+}
+.input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
 }
 header h1 {
     font-size: 24px;
